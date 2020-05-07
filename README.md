@@ -20,6 +20,11 @@ Bias 0.0 / Variance 189.4  |  Bias 0.0 / Variance 94.7  |  Bias 0.0 / Variance 8
 Cornell RR                 | Cosine Importance Sampling | BRDF Importance Sampling
 :-------------------------:|:--------------------------:|:-------------------------:
 ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/importancesampling/cornellRR.png)  |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/importancesampling/cornellRRCosine.png) |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/importancesampling/cornellRRBRDF.png)
-Bias 0.1 / Variance 325.5  |  Bias ? / Variance ?       |  Bias ? / Variance ?
+Bias 0.1 / Variance 325.5  |  Bias 0.0 / Variance 166.9 |  Bias 0.0 / Variance 152.3
+
+Dragon.                    | Cosine Importance Sampling | BRDF Importance Sampling
+:-------------------------:|:--------------------------:|:-------------------------:
+![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/importancesampling/dragon.png)  |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/importancesampling/dragonCosine.png) |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/importancesampling/dragonBRDF.png)
+Bias 0.0 / Variance 15.1  |  Bias 0.0 / Variance 11.0   |  Bias 0.0 / Variance 8.9
 
 ## Separate Direct and Indirect Lighting
