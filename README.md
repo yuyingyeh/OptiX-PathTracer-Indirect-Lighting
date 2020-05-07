@@ -24,7 +24,7 @@ Cornell RR                 | Cosine Importance Sampling | BRDF Importance Sampli
 ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/importancesampling/cornellRR.png)  |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/importancesampling/cornellRRCosine.png) |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/importancesampling/cornellRRBRDF.png)
 Bias 0.1 / Variance 325.5  |  Bias 0.0 / Variance 166.9 |  Bias 0.0 / Variance 152.3
 
-Dragon.                    | Cosine Importance Sampling | BRDF Importance Sampling
+Dragon                     | Cosine Importance Sampling | BRDF Importance Sampling
 :-------------------------:|:--------------------------:|:-------------------------:
 ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/importancesampling/dragon.png)  |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/importancesampling/dragonCosine.png) |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/importancesampling/dragonBRDF.png)
 Bias 0.0 / Variance 15.1  |  Bias 0.0 / Variance 11.0   |  Bias 0.0 / Variance 8.9
@@ -41,3 +41,13 @@ Cornell NEE Separate       | Direct Only | Indirect Only
 :-------------------------:|:--------------------------:|:-------------------------:
 ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/separate/cornellNEESeparate.png)  |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/separate/cornellNEESeparateDirectOnly.png) |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/separate/cornellNEESeparateIndirectOnly.png)
 Bias 0.1 / Variance 183.4  |  -  |  -
+
+Dragon.                    | Direct Only | Indirect Only
+:-------------------------:|:--------------------------:|:-------------------------:
+![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/separate/dragon.png)  |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/separate/dragonDirectOnly.png) |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/separate/dragonIndirectOnly.png)
+Bias 0.0 / Variance 15.1  |  -  |  -
+
+Dragon Separate            | Direct Only | Indirect Only
+:-------------------------:|:--------------------------:|:-------------------------:
+![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/separate/dragonSeparate.png)  |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/separate/dragonSeparateDirectOnly.png) |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/separate/dragonSeparateIndirectOnly.png)
+Bias 0.0 / Variance 12.3  |  -  |  -
