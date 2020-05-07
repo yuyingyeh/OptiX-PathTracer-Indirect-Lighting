@@ -1,5 +1,7 @@
 # OptiX-PathTracer-Indirect-Lighting
 Extra Implementation Results for [UCSD CSE 168 Rendering](http://cseweb.ucsd.edu/~viscomp/classes/cse168/sp20/168.html) assignments.
+1. Importance Sampling
+2. Separate Direct and Indirect Lighting completely
 
 ## Importance Sampling
 - Implement Cosine/BRDF importance sampling as following commands:
@@ -28,3 +30,14 @@ Dragon.                    | Cosine Importance Sampling | BRDF Importance Sampli
 Bias 0.0 / Variance 15.1  |  Bias 0.0 / Variance 11.0   |  Bias 0.0 / Variance 8.9
 
 ## Separate Direct and Indirect Lighting
+I use stratification for direct lighting only and avoid double computing initial direct lighting NEE sample. For the subsequent bounces, I use NEE as in the standard way. We can observe that the noise is largely reduced for direct lighting but only slightly reduced for combined image since it's still very noisy for indirect lighting. 
+
+Cornell NEE                | Direct Only | Indirect Only
+:-------------------------:|:--------------------------:|:-------------------------:
+![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/separate/cornellNEE.png)  |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/separate/cornellNEEDirectOnly.png) |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/separate/cornellNEEIndirectOnly.png)
+Bias 0.0 / Variance 189.4  |  -  |  -
+
+Cornell NEE Separate       | Direct Only | Indirect Only
+:-------------------------:|:--------------------------:|:-------------------------:
+![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/separate/cornellNEESeparate.png)  |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/separate/cornellNEESeparateDirectOnly.png) |  ![](https://github.com/yuyingyeh/OptiX-PathTracer-Indirect-Lighting/blob/master/separate/cornellNEESeparateIndirectOnly.png)
+Bias 0.1 / Variance 183.4  |  -  |  -
